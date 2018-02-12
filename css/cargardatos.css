@@ -1,0 +1,22 @@
+
+body{background-color:#EADCAE;color: #002c3c;}
+h1{width:65%;margin:auto;margin-bottom:20px;color:white;}
+h3{width:65%;margin:auto; }
+#zonaZIKLOAK{background-color: #060;color:white;width:90%;margin:auto;padding:10px;margin-bottom:20px}
+#zonaIKASLEAK{background-color:#060;color:white;width:90%;margin:auto;padding:10px;margin-bottom:20px}
+#listaalumnos,#listamodulos{list-style-type:none;}  
+#listaalumnos li{display:inline-block;padding:2px;}
+#listamodulos li{}
+#listaalumnos li span,#listamodulos li span{display:inline-block;}
+#listaalumnos li .grande{width:200px;}
+#listaalumnos li .medio{width:100px;}
+.peque{width:50px;}
+#listaalumnos  li ul li .modul{ width:250px;padding:2px;}
+#formagregar, #formagregarmod {padding:10px; } 
+#formagregar span, #formagregarmod span{display:inline-block; width: 120px;padding:5px;}
+ #datosAlumnoNuevo{width:50%;margin:auto;text-align: center}
+ #idsuperiorMenu{background-color:  #262626;color: #EADCAE; width:50%;  margin:auto; }
+ #buscar{width:450px;height:30px;}
+ #superiorMenu{width:50%;margin:auto;margin-top: 30px;}
+#izda ,#dcha{}/*#acciones{display:none}*/
+ 
