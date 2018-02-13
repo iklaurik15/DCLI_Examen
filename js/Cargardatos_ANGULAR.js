@@ -65,37 +65,11 @@ miAplicacion.controller('mainController', ["$scope", "$http", function($scope, $
             $scope.verZonaLogin=true;
         };
         
-        $scope.login= function(){           
-            var Datoslogin = $scope.datosLogin;
-            Datoslogin=JSON.stringify(Datoslogin);
+        $scope.login= function(){  
+           
+             
+        };         
             
-            $http({
-                 method: "GET",
-                 url: "controladores/LOGIN.php",
-                 data:Datoslogin,
-                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-                 
-            }).success(function(response){
-                alert(response);
-//                if($scope.datosLogin.rol==$scope.usuarios[0].rol){
-//                    esconder();
-//                    $scope.verBotonesAdmin=true;
-//                }else if($scope.datosLogin.rol=="lector"){
-//                    esconder();
-//                    $scope.verBotonesUsuario=true;
-//                }else{
-//                    esconder();
-//                    alert("El usuario o la contraseña no coinicden.Vuelve a intentarlo");
-//                    $scope.verLogin=true;
-//                    
-//                    $scope.datosLogin.usuario="";
-//                    $scope.datosLogin.pass="";
-//                    $scope.datosLogin.rol="";
-//                }
-            });
-            
-            
-        };
        
        
         

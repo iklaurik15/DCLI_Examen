@@ -8,8 +8,8 @@ class Login{
         $this->db = conectar::conexion();
     }
     
-    public function loguear($usuario,$pass,$rol) {
-        $sql="SELECT * FROM rolak WHERE usuario='$usuario' AND contrasena='$pass' AND rolmota='$rol'";
+    public function loguear() {
+        $sql="SELECT * FROM rolak";
         foreach ($this->db->query($sql) as $res){
             $this->usuarios[]=$res;            
         }

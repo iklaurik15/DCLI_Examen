@@ -1,14 +1,13 @@
 <?php
-    require '../clases/login.class.php';
-    $DatosRecibidos= json_decode($_POST['Datoslogin']);
+    require '../clases/login.class.php';    
     $login = new Login();
-    $consulta=$login->loguear($DatosRecibidos->usuario,$DatosRecibidos->pass,$DatosRecibidos->rol);
+    $consulta=$login->loguear();
     
-    $respuesta= json_encode($consulta);
-    print $respuesta;
+    $usuarios= json_encode($consulta);
+    print $usuarios;
     
-    alert ($respuesta);
+   
     
-//    kdsvkodskovpkposdkvpokfpobkfpdbfdbdb
+
     
 
